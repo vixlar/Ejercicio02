@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0Y-2o-Q4s" userLabel="TextContainer">
+                                <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="42C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8kW-vX-ZtV">
+                                        <rect key="frame" x="73" y="10" width="454" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="-77" y="115" width="454" height="295"/>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mérida" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GXM-zI-3gU">
+                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="-156" y="-21" width="613" height="177"/>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.019607843137254902" green="0.12941176470588234" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <constraints>
+                                    <constraint firstItem="8kW-vX-ZtV" firstAttribute="width" secondItem="L0Y-2o-Q4s" secondAttribute="width" id="4Vn-el-zsp"/>
+                                    <constraint firstItem="GXM-zI-3gU" firstAttribute="width" secondItem="L0Y-2o-Q4s" secondAttribute="width" id="BMi-R5-xtr"/>
+                                    <constraint firstItem="GXM-zI-3gU" firstAttribute="top" secondItem="L0Y-2o-Q4s" secondAttribute="top" constant="10" id="Y2W-1V-9Hj"/>
+                                    <constraint firstAttribute="centerX" secondItem="GXM-zI-3gU" secondAttribute="centerX" id="YEv-3S-I2R"/>
+                                    <constraint firstAttribute="centerX" secondItem="8kW-vX-ZtV" secondAttribute="centerX" id="eoG-7K-aPh"/>
+                                    <constraint firstItem="8kW-vX-ZtV" firstAttribute="top" secondItem="L0Y-2o-Q4s" secondAttribute="top" constant="136" id="wvp-RC-HwE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Vn-el-zsp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="BMi-R5-xtr"/>
+                                        <include reference="4Vn-el-zsp"/>
+                                        <include reference="wvp-RC-HwE"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="3mF-2q-Mpw">
+                                <rect key="frame" x="150" y="20" width="300" height="197"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="3mF-2q-Mpw" secondAttribute="centerY" id="1XN-bn-1vW"/>
+                            <constraint firstItem="L0Y-2o-Q4s" firstAttribute="top" secondItem="3mF-2q-Mpw" secondAttribute="bottom" constant="20" id="59g-rs-Q1U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L0Y-2o-Q4s" secondAttribute="bottom" id="7te-eX-LHN"/>
+                            <constraint firstAttribute="centerX" secondItem="3mF-2q-Mpw" secondAttribute="centerX" id="8ES-IT-wP5"/>
+                            <constraint firstItem="L0Y-2o-Q4s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8mv-lS-Ifw"/>
+                            <constraint firstItem="3mF-2q-Mpw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BKd-ZD-of5"/>
+                            <constraint firstItem="3mF-2q-Mpw" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="BOq-3u-bqC"/>
+                            <constraint firstItem="3mF-2q-Mpw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="KRy-lj-Rnf"/>
+                            <constraint firstItem="L0Y-2o-Q4s" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="MB2-cD-qOP"/>
+                            <constraint firstAttribute="trailing" secondItem="L0Y-2o-Q4s" secondAttribute="trailing" id="W3j-xV-emQ"/>
+                            <constraint firstItem="3mF-2q-Mpw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="dNz-f3-cYK"/>
+                            <constraint firstItem="L0Y-2o-Q4s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hK9-Tf-KqN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1XN-bn-1vW"/>
+                                <exclude reference="KRy-lj-Rnf"/>
+                                <exclude reference="dNz-f3-cYK"/>
+                                <exclude reference="MB2-cD-qOP"/>
+                                <exclude reference="hK9-Tf-KqN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="1XN-bn-1vW"/>
+                                <exclude reference="8ES-IT-wP5"/>
+                                <exclude reference="BKd-ZD-of5"/>
+                                <exclude reference="BOq-3u-bqC"/>
+                                <include reference="KRy-lj-Rnf"/>
+                                <include reference="dNz-f3-cYK"/>
+                                <exclude reference="59g-rs-Q1U"/>
+                                <exclude reference="8mv-lS-Ifw"/>
+                                <include reference="MB2-cD-qOP"/>
+                                <include reference="hK9-Tf-KqN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="300" height="197"/>
+    </resources>
+</document>
